@@ -5,8 +5,13 @@ output:
     keep_md: true
 ---
 
+library(knitr)
+knit2html("PA1_template.md")
+
 
 ## Loading and preprocessing the data
+
+
 
 
 
