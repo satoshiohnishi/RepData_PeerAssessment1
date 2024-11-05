@@ -5,9 +5,9 @@ output:
     keep_md: true
 ---
 
-library(knitr)
-knit2html("PA1_template.md")
-
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
 
 # The analysis of the activity data
 2024/11/06
