@@ -9,18 +9,6 @@ By Satoshi Ohnishi
 Load the necessary libraries and read the activity data.
 
     library(dplyr)
-
-    ## 
-    ## 次のパッケージを付け加えます: 'dplyr'
-
-    ## 以下のオブジェクトは 'package:stats' からマスクされています:
-    ## 
-    ##     filter, lag
-
-    ## 以下のオブジェクトは 'package:base' からマスクされています:
-    ## 
-    ##     intersect, setdiff, setequal, union
-
     library(ggplot2)
 
     # read activity.csv
