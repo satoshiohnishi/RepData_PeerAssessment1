@@ -154,8 +154,6 @@ dev.copy(png, file = "figure/panelplot.png")
 
 In the weekday, the number of steps taken is high in the morning.
 
-In the weekend, the number of steps taken is higher in afternoon than in than weekday.
-
 I think that the handling of missing values is important.
 
 In this analysis, I filled in the missing values with 0.
