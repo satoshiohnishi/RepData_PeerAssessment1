@@ -45,6 +45,8 @@ hist(total_steps$steps,
      main = "Total number of steps taken each day", 
      xlab = "Number of steps", 
      ylab = "Frequency", col = "skyblue")
+# save the plot into 'figure' directory
+dev.copy(png, file = "figure/histogram1.png")
 ```
 
 ### 4. Calculate the mean and median of the total number of steps taken per day
@@ -72,8 +74,8 @@ ggplot(data = activity, aes(x = interval, y = steps)) +
   labs(title = "Time series plot of the average number of steps taken",
        x = "Interval",
        y = "Average number of steps taken")
-
-
+# Save the plot into 'figure' directory
+dev.copy(png, file = "figure/timeseries.png")
 ```
 
 
@@ -113,6 +115,9 @@ hist(total_steps_imputed$steps,
      xlab = "Number of steps", 
      ylab = "Frequency", col = "orange")
 
+# save the plot into 'figure' directory
+dev.copy(png, file = "figure/histogram2.png")
+
 # Calculate the mean and median of the total number of steps taken per day
 mean_steps_imputed <- mean(total_steps_imputed$steps, na.rm = TRUE)
 median_steps_imputed <- median(total_steps_imputed$steps, na.rm = TRUE)
@@ -141,6 +146,8 @@ ggplot(data = activity, aes(x = interval, y = steps)) +
        x = "Interval",
        y = "Average number of steps") +
   theme_minimal()
+# Save the plot into 'figure' directory
+dev.copy(png, file = "figure/panelplot.png")
 ```
 
 ### 9. Conclusion
@@ -156,15 +163,3 @@ In this analysis, I filled in the missing values with 0.
 But it may be better to fill in with the mean or median value.
 
 I believe that the handling of missing values changes the distribution of the data and results and conclusions may change.
-
-
-
-## What is the average daily activity pattern?
-
-
-
-## Imputing missing values
-
-
-
-## Are there differences in activity patterns between weekdays and weekends?
